@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <script>
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script>
+  <!-- ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="dist/img/icon/icon-title.png" />
+  <title>Andy Kris Perdawan</title>
+</head>
+
+
+<body class="dark:bg-dark no-scrollbar">
+  <!-- Header -->
+  <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <div class="container sm:px-[2rem] md:px-[4rem] lg:px-[10rem]">
+      <div class="flex items-center justify-between relative lg:flex-row-reverse">
+        <div class="darkLight block py-6">
+          <input type="checkbox" class="dark-light" id="dark-light" />
+          <label for="dark-light" class="dark-light-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="ball"></span>
+          </label>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+          </button>
+
+          <nav id="nav-menu"
+            class="hidden absolute py-5 px-5 md:pl-0 md:pr-5 bg-white dark:bg-[#132347] shadow-lg rounded-lg w-1/2 right-1 top-full lg:block lg:static lg:bg-transparent dark:lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="./index.html"
+                  class="text-base font-primary text-primary dark:text-white py-2 mr-10 flex hover:text-opacity-30 dark:hover:text-primary">Home</a>
+              </li>
+              <li class="group">
+                <a href="./about.html"
+                  class="text-base font-primary text-primary dark:text-white py-2 mr-10 flex hover:text-opacity-30 dark:hover:text-primary">About</a>
+              </li>
+              <li class="group">
+                <a href="./skills.html"
+                  class="text-base font-primary text-primary dark:text-white py-2 mr-10 flex hover:text-opacity-30 dark:hover:text-primary">Skills</a>
+              </li>
+              <li class="group">
+                <a href="./projects.html"
+                  class="text-base font-primary text-primary dark:text-white py-2 mr-10 flex hover:text-opacity-30 dark:hover:text-primary">Projects</a>
+              </li>
+              <li class="group">
+                <a href="./contact.html"
+                  class="text-base font-primary text-primary dark:text-white py-2 mr-10 flex hover:text-opacity-30 dark:hover:text-primary">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Projects -->
+  <section id="skills" class="pt-16 md:pt-16">
+    <div class="container sm:px-[2rem] md:px-[4rem] lg:px-[10rem]">
+      <div class="mb-8">
+        <div class="w-full text-center mt-10 px-4">
+          <h1 class="font-extrabold font-primary text-primary text-3xl md:text-4xl">
+            Projects
+          </h1>
+        </div>
+      </div>
+      <div class="overflow-hidden rounded-xl border border-gray-100 dark:border-primary bg-gray-50 dark:bg-dark p-1">
+        <ul class="flex items-center gap-2 text-sm font-medium">
+          <li class="flex-1 projectsTab-btn active-btn" id="website">
+            <a href="#"
+              class="flex items-center text-primary justify-center gap-2 rounded-lg px-3 py-2 hover:bg-white dark:hover:bg-slate-500 dark:hover:text-primary hover:text-gray-700 hover:shadow">
+              Website</a>
+          </li>
+          <li class="flex-1 projectsTab-btn" id="mobile">
+            <a href="#"
+              class="flex items-center text-primary justify-center gap-2 rounded-lg px-3 py-2 hover:bg-white dark:hover:bg-slate-500 dark:hover:text-primary hover:text-gray-700 hover:shadow">
+              Mobile Apps</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mt-4">
+        <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 group items-center">
+          <!-- ITEM SATU -->
+          <div
+            class="items-project website flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg dark:bg-[#132347]">
+            <div
+              class="mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+              <img src="dist/img/portfolio/4.png" alt="ui/ux review check" />
+            </div>
+            <div class="p-6">
+              <div class="mb-3 flex items-center justify-between">
+                <h5
+                  class="block font-sans text-xl font-bold leading-snug tracking-normal text-blue-gray-900 antialiased dark:text-white">
+                  Volunteer Mobile Apps
+                </h5>
+              </div>
+              <p
+                class="font-mono text-base text-left line-clamp-3 font-light leading-relaxed text-gray-700 dark:text-white">
+                Enter a freshly updated and thoughtfully furnished peaceful
+                home surrounded by ancient trees, stone walls, and open
+                meadows.
+              </p>
+              <div class="group mt-3 inline-flex flex-wrap items-center gap-3">
+                <span data-tooltip-target="fire"
+                  class="cursor-pointer rounded-full border-0 border-primary bg-primary bg-opacity-10 p-3 text-primary transition-colors hover:!opacity-100 group-hover:opacity-70">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
+                    <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                    <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                    <path fill="#FFF"
+                      d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path>
+                    <path fill="#EEE"
+                      d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="p-6 pt-1 w-1/2">
+              <button
+                 class="peer inline-flex items-center px-4 py-2 bg-primary hover:shadow-lg hover:bg-sky-700 text-white text-sm font-medium rounded-md" id="modal-button">
+                Details
+                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" height="1em" viewBox="0 0 448 512">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+
+                    <style>
+                      svg {
+                        fill: #ffffff;
+                      }
+                    </style>
+                    <path
+                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                  </svg>
+                  <path
+                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                </svg>
+              </button>
+              <div id="modal" class="hidden items-center justify-center z-[300] h-[100dvh] w-screen top-0 left-0 bottom-0 right-0 fixed  bg-black bg-opacity-90 overflow-auto"> <!--Modal Dialog -->
+                <div class="flex flex-col bg-white dark:bg-[#132347]   absolute sm:w-1/2 w-full h-full overflow-scroll no-scrollbar"> <!--Modal Content -->
+                     <div class="py-3 pl-3 pr-6 flex items-center justify-between border-b border-b-gray-300"> <!--Modal Header -->
+                        <h3 class="font-extrabold text-xl dark:text-white">Volunteer Mobile Apps</h3>
+                        <span class="modal-close cursor-pointer text-xl dark:text-white "><i class="fa-solid fa-xmark"></i></span> <!-- Close Modal -->
+                    </div>
+                    <div class="p-3 border-b border-b-gray-300 relative"> <!--Modal Body -->
+                      <div
+                      class="overflow-hidden w-full  rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+                      <img src="dist/img/portfolio/4.png" alt="ui/ux review check" />
+                    </div>
+                    <div class="group mt-5 inline-flex flex-wrap items-center gap-3">
+                      <span data-tooltip-target="fire"
+                        class="cursor-pointer rounded-full border-0 border-primary bg-primary bg-opacity-10 p-3 text-primary transition-colors  hover:!opacity-100 group-hover:opacity-70">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+                          viewBox="0 0 48 48">
+                          <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                          <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                          <path fill="#FFF"
+                            d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z">
+                          </path>
+                          <path fill="#EEE"
+                            d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z">
+                          </path>
+                        </svg>
+                      </span>
+                    </div>
+                    <p class="font-mono  text-base text-left   font-light leading-relaxed text-gray-700 dark:text-white">
+                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, quaerat eum eveniet ex quia nesciunt libero corporis voluptatibus sed, animi consequuntur sapiente ut explicabo pariatur? Cumque dolore veniam, ipsa animi assumenda sunt itaque accusamus at necessitatibus voluptates? Rem omnis est molestias deserunt. Est nam adipisci aut aperiam minus, dolores distinctio reiciendis, et consequatur libero incidunt obcaecati iure. Optio quos asperiores officiis mollitia at reprehenderit quas voluptate quaerat odio minima repellendus corrupti saepe impedit nihil iste rerum quia dolorem, quidem delectus.
+                      </p>
+                    </div>
+                    <div class="p-3 flex items-center justify-start"> <!--Modal Footer -->
+                      <button
+                      class="px-4 bg-transparent py-2 rounded-lg border   text-primary hover:bg-gray-100 hover:text-sky-700 mr-2 dark:bg-white"><i
+                        class="fa-brands fa-github mr-2"></i>Repository</button>
+                    <button class="px-4 bg-primary py-2 rounded-lg text-white hover:bg-sky-700"><i
+                        class="fa-solid fa-play mr-2" style="color: #ffffff;"></i>Preview</button>
+                    </div>
+                </div>
+            </div>
+             
+
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="dist/js/script.js"></script>
+  <script
+  type="text/javascript"
+  src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+</body>
+
+</html>
