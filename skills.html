@@ -23,7 +23,8 @@
 
 
 
-<body class="dark:bg-dark no-scrollbar">
+
+<body class="dark:bg-dark dark:bg-none no-scrollbar bg-[url(https://preline.co/assets/svg/component/polygon-bg-element.svg)] bg-origin-content bg-no-repeat" >
   <!-- Header -->
   <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
     <div class="container sm:px-[2rem] md:px-[4rem] lg:px-[10rem]">
@@ -74,7 +75,7 @@
   </header>
 
     <!-- Skills -->
-    <section id="skills" class="pt-16 md:pt-16">
+    <section id="skills" class="pt-16 md:pt-16 ">
         <div class="container sm:px-[2rem] md:px-[4rem] lg:px-[10rem]">
             <div class="mb-8">
                 <div class="w-full text-center mt-10 px-4">
@@ -83,31 +84,23 @@
                     </h1>
                 </div>
             </div>
-            <div class="overflow-hidden rounded-xl border border-gray-100 dark:border-primary bg-gray-50 dark:bg-dark p-1">
-                <ul class="flex items-center gap-2 text-sm font-medium">
-                    <li class="flex-1 skillsTab-btn active-btn" id="language">
-                        <a href="#"
-                            class=" text-primary flex items-center justify-center gap-2 rounded-lg px-3 py-2  hover:bg-white dark:hover:bg-slate-500 dark:hover:text-primary hover:text-gray-700 hover:shadow">
-                            Language</a>
-                    </li>
-                    <li class="flex-1 skillsTab-btn " id="framework" >
-                        <a href="#"
-                            class="flex items-center text-primary justify-center gap-2 rounded-lg px-3 py-2  hover:bg-white dark:hover:bg-slate-500 dark:hover:text-primary hover:text-gray-700 hover:shadow">
-                            Framework</a>
-                    </li>
-                    <li class="flex-1 skillsTab-btn" id="library">
-                        <a href="#"
-                            class="flex items-center text-primary justify-center gap-2 rounded-lg px-3 py-2  hover:bg-white dark:hover:bg-slate-500 dark:hover:text-primary hover:text-gray-700 hover:shadow">
-                            Library
-                        </a>
-                    </li>
-                    <li class="flex-1 skillsTab-btn" id="database">
-                        <a href="#"
-                            class="flex items-center text-primary justify-center gap-2 rounded-lg px-3 py-2  hover:bg-white dark:hover:bg-slate-500 dark:hover:text-primary hover:text-gray-700 hover:shadow">
-                            Database</a>
-                    </li>
-                </ul>
+            <div class="flex">
+                <div class="overflow-hidden md:w-1/2 justify-self-center rounded-xl border border-gray-100 dark:border-primary bg-gray-50 dark:bg-dark p-1">
+                    <ul class="flex items-center gap-2 text-sm font-medium">
+                        <li class="flex-1 skillsTab-btn active-btn" id="tech">
+                            <a href="#"
+                                class=" text-primary flex items-center justify-center gap-2 rounded-lg px-3 py-2  hover:bg-white dark:hover:bg-slate-500 dark:hover:text-primary hover:text-gray-700 hover:shadow">
+                                Tech Stack</a>
+                        </li>
+                        <li class="flex-1 skillsTab-btn " id="tool" >
+                            <a href="#"
+                                class="flex items-center text-primary justify-center gap-2 rounded-lg px-3 py-2  hover:bg-white dark:hover:bg-slate-500 dark:hover:text-primary hover:text-gray-700 hover:shadow">
+                                Tools</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            
 
             <div class="mt-7">
                 <div class="grid grid-cols-3 gap-5 sm:grid-cols-4 md:grid-cols-6 group">
@@ -141,7 +134,7 @@
                                 </path>
                             </svg></span>
                     </div>
-                    <div class="items-skill language mx-auto items-center text-center group ">
+                    <div class="items-skill tech mx-auto items-center text-center group ">
                         <span
                             class="p-5 rounded-full bg-white shadow-lg shadow-sky-100 transition hover:-translate-y-3 dark:bg-dark dark:shadow-lg dark:shadow-gray-950"><svg
                                 xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
@@ -152,7 +145,7 @@
                                 </path>
                             </svg></span>
                     </div>
-                    <div class="items-skill language mx-auto items-center text-center group ">
+                    <div class="items-skill tech mx-auto items-center text-center group ">
                         <span
                             class="p-5 rounded-full bg-white shadow-lg shadow-sky-100 transition hover:-translate-y-3 dark:bg-dark dark:shadow-lg dark:shadow-gray-950"><svg
                                 xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
@@ -182,7 +175,7 @@
                                 </g>
                             </svg></span>
                     </div>
-                    <div class="items-skill library mx-auto items-center text-center group ">
+                    <div class="items-skill tech mx-auto items-center text-center group ">
                         <span
                             class="p-5 rounded-full bg-white shadow-lg shadow-sky-100 transition hover:-translate-y-3 dark:bg-dark dark:shadow-lg dark:shadow-gray-950"><svg
                                 xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
@@ -197,7 +190,7 @@
                                 </path>
                             </svg></span>
                     </div>
-                    <div class="items-skill framework mx-auto items-center text-center group ">
+                    <div class="items-skill tech mx-auto items-center text-center group ">
                         <span
                             class="p-5 rounded-full bg-white shadow-lg shadow-sky-100 transition hover:-translate-y-3 dark:bg-dark dark:shadow-lg dark:shadow-gray-950"><svg
                                 xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
@@ -214,7 +207,7 @@
                                 <circle cx="24" cy="24" r="4" fill="#80deea"></circle>
                             </svg></span>
                     </div>
-                    <div class="items-skill database mx-auto items-center text-center group ">
+                    <div class="items-skill tech mx-auto items-center text-center group ">
                         <span
                             class="p-5 rounded-full bg-white shadow-lg shadow-sky-100 transition hover:-translate-y-3 dark:bg-dark dark:shadow-lg dark:shadow-gray-950"><svg
                                 xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
@@ -250,7 +243,7 @@
                                 </path>
                             </svg></span>
                     </div>
-                    <div class="items-skill language mx-auto items-center text-center group ">
+                    <div class="items-skill tech mx-auto items-center text-center group ">
                         <span
                             class="p-5 rounded-full bg-white shadow-lg shadow-sky-100 transition hover:-translate-y-3 dark:bg-dark dark:shadow-lg dark:shadow-gray-950"><svg
                                 xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
@@ -275,6 +268,12 @@
                                 <polygon fill="#557bde" points="33.86,42 25.68,42 15.84,32.17 19.92,28.09"></polygon>
                                 <polygon fill="#806ee3" points="42,42 33.86,42 19.92,28.09 24,24"></polygon>
                             </svg></span>
+                    </div>
+                    <div class="items-skill tool mx-auto items-center text-center group ">
+                        <span
+                            class="p-5 rounded-full bg-white shadow-lg shadow-sky-100 transition hover:-translate-y-3 dark:bg-dark dark:shadow-lg dark:shadow-gray-950"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                <linearGradient id="3fGFTDt8GTtIeBARnD~Oya_Of4lZV2lwBQI_gr1" x1="21.175" x2="25.872" y1="10.027" y2="33.258" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#00b3ba"></stop><stop offset=".998" stop-color="#00979c"></stop></linearGradient><path fill="url(#3fGFTDt8GTtIeBARnD~Oya_Of4lZV2lwBQI_gr1)" d="M36,36c-5.018,0-9.425-3.859-12-7.714C21.425,32.141,17.018,36,12,36C5.383,36,0,30.617,0,24	s5.383-12,12-12c5.935,0,9.884,4.448,12,7.755C26.116,16.448,30.065,12,36,12c6.617,0,12,5.383,12,12S42.617,36,36,36z M26.181,24.037C27.828,27.614,32,32,36,32c4.411,0,8-3.589,8-8s-3.589-8-8-8C30.584,16,27.199,21.954,26.181,24.037z M12,16	c-4.411,0-8,3.589-8,8s3.589,8,8,8c4.017,0,8.206-4.422,9.823-7.963C20.837,22.018,17.445,16,12,16z M16,24.5v-1	c0-0.276-0.224-0.5-0.5-0.5h-7C8.224,23,8,23.224,8,23.5v1C8,24.776,8.224,25,8.5,25h7C15.776,25,16,24.776,16,24.5z M39.5,23H37	v-2.5c0-0.276-0.224-0.5-0.5-0.5h-1c-0.276,0-0.5,0.224-0.5,0.5V23h-2.5c-0.276,0-0.5,0.224-0.5,0.5v1c0,0.276,0.224,0.5,0.5,0.5H35	v2.5c0,0.276,0.224,0.5,0.5,0.5h1c0.276,0,0.5-0.224,0.5-0.5V25h2.5c0.276,0,0.5-0.224,0.5-0.5v-1C40,23.224,39.776,23,39.5,23z"></path>
+                                </svg></span>
                     </div>
                 </div>
             </div>

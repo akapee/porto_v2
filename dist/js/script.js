@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const skillsBtn = document.querySelectorAll(".skillsTab-btn");
 const skillItem = document.querySelectorAll(".items-skill");
 
-let activeBtn = "language";
+let activeBtn = "tech";
 
 showSkillsItem(activeBtn);
 
